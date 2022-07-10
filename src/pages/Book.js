@@ -17,7 +17,7 @@ export const Book = () => {
       })
       .finally(() => setLoading(false));
   }, [id]);
-
+  console.log(book);
   if (loading)
     return (
       <div
@@ -60,7 +60,7 @@ export const Book = () => {
               <Col span={24}>
                 <Typography.Title level={3}>Category</Typography.Title>
                 <Typography.Paragraph>
-                  {book.Category.name}
+                  {book?.Category?.name}
                 </Typography.Paragraph>
               </Col>
               <Col span={24}>
