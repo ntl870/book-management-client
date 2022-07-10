@@ -58,6 +58,12 @@ export const Book = () => {
                 <Typography.Text>{book.name}</Typography.Text>
               </Col>
               <Col span={24}>
+                <Typography.Title level={3}>Category</Typography.Title>
+                <Typography.Paragraph>
+                  {book.Category.name}
+                </Typography.Paragraph>
+              </Col>
+              <Col span={24}>
                 <Typography.Title level={3}>Description</Typography.Title>
                 <Typography.Paragraph>{book.description}</Typography.Paragraph>
               </Col>
